@@ -9,10 +9,10 @@
 ## Projets :
 
 [Projet 1 - Site photographe](http://frmi.free.fr/perso/project01/index.html)  
-[Projet 2 - Le juste prix](http://frmi.free.fr/perso/js/justePrix.html)  
-[Projet 3 - Citations](http://frmi.free.fr/perso/js/citations.html)  
-[Projet 4 - Météo](http://frmi.free.fr/perso/js/meteo2.html)  
-[Projet 5 - Casse-briques](http://frmi.free.fr/perso/project02/exercice2.html)  
+[Projet 2 - Casse-briques](http://frmi.free.fr/perso/project02/exercice2.html)  
+[Projet 3 - Citations](http://frmi.free.fr/perso/project03/citations.html)  
+[Projet 4 - Météo](http://frmi.free.fr/perso/project04/meteo2.html)  
+[Projet 5 - Le juste prix](http://frmi.free.fr/perso/project05/justePrix.html)  
 [Projet 6 - Formulaire full stack](https://github.com/frmi2018/react/tree/main/front/form)  
 Projet 7 - Site inspiré de Tripadvisor  
 Projet 8 - Page recette du site Marmiton
