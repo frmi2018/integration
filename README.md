@@ -13,6 +13,4 @@
 [Projet 3 - Citations](http://frmi.free.fr/perso/project03/citations.html)  
 [Projet 4 - Météo](http://frmi.free.fr/perso/project04/meteo2.html)  
 [Projet 5 - Le juste prix](http://frmi.free.fr/perso/project05/justePrix.html)  
-[Projet 6 - Formulaire full stack](https://github.com/frmi2018/react/tree/main/front/form)  
-Projet 7 - Site inspiré de Tripadvisor  
-Projet 8 - Page recette du site Marmiton
+[Projet 6 - Quizz](http://frmi.free.fr/perso/project06/index.html)
