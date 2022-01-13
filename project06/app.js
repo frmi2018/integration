@@ -5,7 +5,7 @@ const emojis = ['✔️', '✨', '👀', '😭', '👎'];
 const titreResultat = document.querySelector('.resultats h2');
 const noteResultat = document.querySelector('.note');
 const aideResultat = document.querySelector('.aide');
-const toutesLesquestions = document.querySelectorAll('.question-block');
+const toutesLesQuestions = document.querySelectorAll('.question-block');
 let verifTableau = [];
 
 form.addEventListener('submit', (e) => {
@@ -31,6 +31,7 @@ function verifFunc(tabResultats) {
   }
 
   afficherResultats(verifTableau);
+  couleursFonction(verifTableau);
   verifTableau = [];
 }
 
@@ -79,3 +80,25 @@ function afficherResultats(tabcheck) {
       'Wops, cas innatendu.';
   }
 }
+
+function couleursFonction(tabValBool) {
+  for (let j = 0; j < tabValBool.length; j++) {
+    if (tabValBool[j] === true) {
+      toutesLesQuestions[j].style.background = 'lightgreen';
+    } else {
+      toutesLesQuestions[j].style.background = '#ffb8b8';
+      // ajouter animation check
+      toutesLesQuestions[j].classList.add('echec');
+      // retirer animation check au bout de 0.5s
+      setTimeout(() => {
+        toutesLesQuestions[j].classList.remove('echec');
+      }, 500);
+    }
+  }
+}
+
+toutesLesQuestions.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.style.background = 'white';
+  });
+});
