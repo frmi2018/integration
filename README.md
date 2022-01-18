@@ -16,6 +16,7 @@
 [Projet 04b - Météo 2](http://frmi.free.fr/perso/project04/meteo2.html) - avec géolocalisation  
 [Projet 05 - Le juste prix](http://frmi.free.fr/perso/project05/justePrix.html)  
 [Projet 06 - Quizz](http://frmi.free.fr/perso/project06/index.html)
+[Projet 07 - Recherche utilisateur](http://frmi.free.fr/perso/project07/index.html)
 
 ## Tests :
 
