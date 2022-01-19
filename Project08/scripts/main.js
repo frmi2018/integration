@@ -1,3 +1,5 @@
+import tabJourEnOrdre from './Utilitaire/gestionTemps.js';
+
 const APIKEY = 'dc8c9152e8adaad0ec8bf635818c0d42';
 let resultatAPI;
 
