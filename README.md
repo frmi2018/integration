@@ -17,7 +17,7 @@
 [Projet 05 - Le juste prix](http://frmi.free.fr/perso/project05/justePrix.html)  
 [Projet 06 - Quizz](http://frmi.free.fr/perso/project06/index.html)  
 [Projet 07 - Recherche utilisateur](http://frmi.free.fr/perso/project07/index.html)  
-[Projet 08 - Application météo](http://frmi.free.fr/perso/project08/index.html)
+[Projet 08 - Autre application météo](http://frmi.free.fr/perso/project08/index.html)
 
 ## Tests :
 
