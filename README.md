@@ -27,4 +27,5 @@
 [Timer](http://frmi.free.fr/perso/tests/timer.html) /
 [Bitcoin](http://frmi.free.fr/perso/tests/bitcoin.html) /
 [Calcul IMC](http://frmi.free.fr/perso/tests/calculerIMC.html) /
-[Spoiler](http://frmi.free.fr/perso/tests/spoiler.html)
+[Spoiler](http://frmi.free.fr/perso/tests/spoiler.html) /
+[Modal](http://frmi.free.fr/perso/tests/modal-js/index.html)
