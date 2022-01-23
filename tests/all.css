@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#navButtons {
+    /* espace navigation */
+    background-color: blue; /* ne doit pas apparaitre une fois mise en page ok */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Passe à la ligne les boutons si taille fen&ecirc;tre change */
+    list-style: none;
+}
+
+#navButtons li {
+    display: flex;
+    width: 160px; /* largeur du li */
+    background-color: blue; /* ne doit pas apparaitre une fois mise en page ok */
+    flex: 1 1 auto; /* flex-grow - flex-shrink - flex-basis */
+}
+
+#navButtons li a {
+    background-color: var(--black); /* couleur button */
+    color: var(--white); /* couleur text button */
+    text-transform: uppercase; /* text button en majuscule */
+    text-decoration: none; /* enlever le trait sous le lien */
+    padding: 5px 0; /* &eacute;cart entre le texte et les bords du bouton */
+    /* effet bouton du menu non enfonc&eacute; */
+    border: solid 2px;
+    border-color:#DCDCDC #696969 #696969 #DCDCDC;
+    display: flex;
+    flex-basis: 100%; /* largeur bouton &eacute;gale 100% de l'espace li */
+    justify-content: center; /* alignement contenu horizontalement */
+}
+
+/* effet bouton du menu enfonc&eacute; */
+#navButtons li a:hover {
+    background-color:#D3D3D3;
+    border-color:#696969 #DCDCDC #DCDCDC #696969;
+}
+
+article {
+    background: var(--bgarticle);
+    color: var(--white);
+    margin-bottom: 10px;
+    padding: 10px /* marge entre bord article et contenu */
+}
+
+h1 {
+    font-size: 2.4em;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    color:rgb(17, 47, 65);
+    text-shadow: 4px 4px 25px rgba(150, 150, 150, 1);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+.centre {
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+a:visited, a:link {
+    color: cyan;
+}
+
+.tip {
+    color: yellow;
+    font-weight: bold;
+}
+
+.boldNewTerms {
+    color: brown;
+}
+
+abbr {
+    padding: 0 5px;
+}
+
+#project {
+    color: orange;
+    font-weight: bold;
+}
+
+.info {
+    border: yellow solid;
+    color: yellow;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot { /* image */
+    display: flex;
+    max-width: 260px;
+    height: auto;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.logo {
+    display: flex;
+    max-width: 80px;
+    height: auto;
+}
+
+.logo-centre {
+    display: flex;
+    max-width: 80px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.linkScr { /* conteneur image lien */
+    display: block;
+    max-width: max-content;
+    max-height: max-content;
+    margin: 10px auto;
+    padding: 0;
+}
+
+/* icone pour remonter en haut de l'&eacute;cran */
+.topPageImg {
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: black;
+}
+
+#img-w300-p10 {
+    max-width: 300;
+    padding: 10px;
+}
+
+#paddingTop-3l {
+    padding-top: 99px;
+}
+
+#paddingTop-2l {
+    padding-top: 66px;
+}
+
+#paddingTop-1l {
+    padding-top: 33px;
+}
+
+article table {
+    display: flex;
+    justify-content: center;
+}
+
+table tr {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Passe à la ligne les boutons si besoin */
+}
+
+#table3 {
+    min-width: 300px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+#table3 tr {
+    width: 100%;
+}
+
+#table3 tr td {
+    border: 1px solid;
+    text-align: center;
+    padding: 5px;
+    width: 50%;
+}
+
+#me {
+    display: block;
+    margin: 0 auto;
+    max-width: 160px;
+    border-radius: 80px;
+}
+
+#listBtn {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    justify-content: center; /* alignement contenu horizontalement */
+}
+
+#listBtn li {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* alignement contenu horizontalement */
+}
+
+#listBtn li a {
+    /* espace navigation */
+    background-color: none; /* ne doit pas apparaitre une fois mise en page ok */
+    margin: 5px; /* marge ext */
+    padding: 5px; /* marge int */
+    text-decoration: none; /* enlever le trait sous le lien */
+    border: solid 2px;
+    color: var(--white);
+    width: 200px;
+    text-align: center;
+}
+
+.p-centre {
+    text-align: center;
+}
+
+.links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+.links li a {
+    background-color: var(--white); /* couleur button */
+    padding: 0; /* &eacute;cart entre le contenu et les bords du bouton */
+    /* effet bouton du menu non enfonc&eacute; */
+    border: solid 2px;
+    border-color:#DCDCDC #696969 #696969 #DCDCDC;
+    display: flex;
+    min-width: 50%; /* largeur du bouton */
+    justify-content: center; /* alignement contenu horizontalement */
+}
+
+/* effet bouton du menu enfonc&eacute; */
+.links li a:hover {
+    background-color:#D3D3D3;
+    border-color:#696969 #DCDCDC #DCDCDC #696969;
+}
+
+.links li img {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    max-width: 190px;
+    height: auto;
+}
