@@ -28,4 +28,6 @@
 [Bitcoin](http://frmi.free.fr/perso/tests/bitcoin.html) /
 [Calcul IMC](http://frmi.free.fr/perso/tests/calculerIMC.html) /
 [Spoiler](http://frmi.free.fr/perso/tests/spoiler.html) /
-[Modal](http://frmi.free.fr/perso/tests/modal-js/index.html)
+[Modal](http://frmi.free.fr/perso/tests/modal-js/index.html) /
+[btn-go-up-page](http://frmi.free.fr/perso/tests/bgup/bgup.html) /
+[Smooth Scroll](http://frmi.free.fr/perso/tests/smooth-scroll.html)
