@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FRMI-Integration-TripAdvisor</title>
+
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/fedf5f0d30.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container">
+      <i class="fas fa-bars hidden"></i>
+      <img src="./assets/img/logo.svg" alt="logo TripAdvisor" />
+      <i class="fas fa-search hidden"></i>
+
+      <nav>
+        <div><i class="fas fa-pen"></i> <span>Avis</span></div>
+        <div><i class="far fa-bell"></i> <span>Voyages</span></div>
+        <div><i class="far fa-heart"></i> <span>Forums</span></div>
+
+        <a href="#"><button>Me contacter</button></a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1><span>Explorez</span> France</h1>
+
+      <!-- Menu -->
+      <nav class="menu">
+        <div><span>Hôtels</span><i class="fas fa-bed"></i></div>
+        <div>
+          <span>Locations de vacances</span><i class="fas fa-house-user"></i>
+        </div>
+        <div><span>Activités</span><i class="fas fa-ticket-alt"></i></div>
+        <div><span>Restaurants</span><i class="fas fa-utensils"></i></div>
+        <div><span>Forum de Voyage</span><i class="far fa-comments"></i></div>
+        <div><span>Vols</span><i class="fas fa-plane-departure"></i></div>
+        <div><span>Voitures de location</span> <i class="fas fa-car"></i></div>
+        <div><span>Plus</span><i class="fas fa-ellipsis-h"></i></div>
+      </nav>
+
+      <!-- Pictures -->
+      <div class="pictures">
+        <div class="col-1">
+          <img src="./assets/img/caption.jpg" alt="" />
+        </div>
+        <div class="col-2">
+          <img src="./assets/img/caption2.jpg" alt="" /><img
+            src="./assets/img/caption3.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="links">
+        <nav>
+          <a href="#">Europe</a><span> > </span><a href="#">France</a>
+          <i class="fas fa-caret-down"></i>
+        </nav>
+        <p>Visiter : France</p>
+      </div>
+
+      <!-- Description -->
+      <div class="description">
+        <div class="col-1">
+          <h2>France : informations</h2>
+          <p>
+            Paris n'est pas l'unique site touristique français : découvrez les
+            châteaux de la Loire tout droit sortis de contes de fées, les champs
+            de lavande de Provence et les plages de la Côte d'Azur fréquentées
+            par les célébrités. La gastronomie et les grands vins réputés dans
+            le monde entier complètent à merveille le point de vue sur les Alpes
+            dans l'arrière-pays et les chefs-d'œuvre architecturaux.
+          </p>
+        </div>
+        <div class="col-2">
+          <div>
+            <h3>France : commencez à organiser !</h3>
+            <p>
+              Créez un voyage pour enregistrer et organiser toutes vos idées et
+              les visualiser sur une carte.
+            </p>
+            <button>Créer un voyage</button>
+          </div>
+          <div></div>
+        </div>
+      </div>
+
+      <!-- Section 1 - Carrousel -->
+      <section class="section-1">
+        <h2>France : les immanquables</h2>
+
+        <div>
+          <div class="col-1">
+            <h3>Se divertir</h3>
+            <p>
+              Des lieux à voir, des rues à explorer et des expériences
+              emblématiques.
+            </p>
+          </div>
+          <!-- Carrousel -->
+          <div class="col-2">
+            <div class="col-carrousel">
+              <!-- Grande photo du carrousel -->
+              <div class="photo">
+                <img src="./assets/img/vign-01.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/logo-small.svg" alt="" />
+              </div>
+              <h4>Musée d'Orsay</h4>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-adjust"></i>
+              <span>1200</span>
+              <p>Genre</p>
+              <p>Ville</p>
+            </div>
+            <div class="col-carrousel">
+              <!-- Grande photo du carrousel -->
+              <div class="photo">
+                <img src="./assets/img/vign-02.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/logo-small.svg" alt="" />
+              </div>
+              <h4>Musée d'Orsay</h4>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-adjust"></i>
+              <i class="far fa-circle"></i>
+              <i class="far fa-circle"></i>
+              <span>1200</span>
+              <p>Genre</p>
+              <p>Ville</p>
+            </div>
+
+            <div class="col-carrousel">
+              <!-- Grande photo du carrousel -->
+              <div class="photo">
+                <img src="./assets/img/vign-03.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/logo-small.svg" alt="" />
+              </div>
+              <h4>Place de la Bourse</h4>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-adjust"></i>
+              <i class="far fa-circle"></i>
+              <span>1200</span>
+              <p>Genre</p>
+              <p>Ville</p>
+            </div>
+
+            <div class="col-carrousel">
+              <!-- Grande photo du carrousel -->
+              <div class="photo">
+                <img src="./assets/img/vign-04.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/logo-small.svg" alt="" />
+              </div>
+              <h4>Musée d'Orsay</h4>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-adjust"></i>
+              <span>1200</span>
+              <p>Genre</p>
+              <p>Ville</p>
+            </div>
+
+            <div class="col-carrousel">
+              <!-- Grande photo du carrousel -->
+              <div class="photo">
+                <img src="./assets/img/vign-05.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/logo-small.svg" alt="" />
+              </div>
+              <h4>Basilique Notre-Dame de la Garder</h4>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-adjust"></i>
+              <span>1200</span>
+              <p>Genre</p>
+              <p>Ville</p>
+            </div>
+
+            <div class="col-carrousel">
+              <!-- Grande photo du carrousel -->
+              <div class="photo">
+                <img src="./assets/img/vign-06.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/logo-small.svg" alt="" />
+              </div>
+              <h4>Iles de Lérins</h4>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-adjust"></i>
+              <span>1200</span>
+              <p>Genre</p>
+              <p>Ville</p>
+            </div>
+            <div class="col-carrousel">
+              <!-- Grande photo du carrousel -->
+              <div class="photo">
+                <img src="./assets/img/vign-07.jpg" alt="" />
+                <div class="circle">
+                  <i class="far fa-heart"></i>
+                </div>
+                <img src="./assets/img/logo-small.svg" alt="" />
+              </div>
+              <h4>Les remparts de Saint-Malo</h4>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-adjust"></i>
+              <span>1200</span>
+              <p>Genre</p>
+              <p>Ville</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <h2>Destinations</h2>
+      <section class="section-2">
+        <div>
+          <img src="./assets/img/camera.png" alt="" />
+          <span>Paris, France</span>
+        </div>
+        <div>
+          <img src="./assets/img/camera.png" alt="" />
+          <span>Nice, France</span>
+        </div>
+        <div>
+          <img src="./assets/img/camera.png" alt="" />
+          <span>Chessy, France</span>
+        </div>
+        <div>
+          <img src="./assets/img/camera.png" alt="" />
+          <span>Marseille, France</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <img src="./assets/img/logo-small.svg" alt="" />
+        <p>
+          Made at <a href="https://www.lereacteur.io/">Le Reacteur</a> by
+          <a href="https://github.com/frmi2018">FRMI</a> - &copy; 2021
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

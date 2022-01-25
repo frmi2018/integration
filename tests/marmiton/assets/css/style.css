@@ -1,0 +1,127 @@
+body {
+  font-size: 16px;
+  background-color: #efefef;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  /* border: black 3px solid; */
+}
+
+/* HEADER */
+header {
+  background-color: white;
+  border-bottom: 1px solid color #f3735f;
+  height: 60px;
+}
+
+/* logo */
+header img {
+  height: 30px;
+  padding-top: 15px;
+}
+
+section {
+  background-color: white;
+  padding: 60px 30px;
+  border-radius: 20px;
+  width: 1024px;
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #393c6c;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 60px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #f3735f;
+  line-height: 35px;
+}
+
+.baseline {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #6c6c6c;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* rectangle gris */
+.temps-total {
+  width: 400px;
+  background-color: #8a98b1;
+  border-radius: 10px;
+  margin: 0 auto 60px auto;
+  text-align: center;
+}
+
+.txt-temps {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+  color: white;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 16px;
+}
+
+/* ingrédients */
+
+ul {
+  padding-left: 30px;
+}
+
+li {
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 16px;
+  list-style-type: disc;
+  color: #6c6c6c;
+}
+
+/* Etapes */
+
+.etape {
+  text-align: justify;
+  font-weight: 400;
+  font-style: 16px;
+  line-height: 22px;
+}
+
+h3 {
+  color: #393c6c;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+.credits {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #6c6c6c;
+  padding: 60px;
+}
