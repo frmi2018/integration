@@ -18,7 +18,9 @@
 [Projet 05 - Le juste prix](http://frmi.free.fr/perso/project05/justePrix.html) addEventListener submit & keyup / manipulation du DOM avec JS  
 [Projet 06 - Quizz](http://frmi.free.fr/perso/project06/index.html)  
 [Projet 07 - Recherche utilisateur](http://frmi.free.fr/perso/project07/index.html)  
-[Projet 09 - Pokédex](http://frmi.free.fr/perso/project09/index.html) scroll infini / recherche / double requête fetch
+[Projet 09 - Pokédex](http://frmi.free.fr/perso/project09/index.html) scroll infini / recherche / double requête fetch  
+[Projet 10 - Site de voyage](http://frmi.free.fr/perso/project10/index.html)  
+[Projet 11 - Site de gym](http://frmi.free.fr/perso/project11/index.html)
 
 ## Tests :
 
