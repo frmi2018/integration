@@ -94,7 +94,7 @@ window.addEventListener('scroll', () => {
   // scrollTop = scroll depuis le top
   // scrollHeight = scroll total
   // clientHeight = hauteur de la fenêtre, partie visible
-  console.log(scrollTop, scrollHeight, clientHeight);
+  // console.log(scrollTop, scrollHeight, clientHeight);
   if (clientHeight + scrollTop >= scrollHeight - 20) {
     addPoke(6);
   }
@@ -109,6 +109,36 @@ function addPoke(nb) {
   const arrToAdd = allPokemon.slice(index, index + nb);
   createCard(arrToAdd);
   index += nb;
+}
+
+// Recherche
+
+// searchInput.addEventListener('keyup', recherche);
+
+const formRecherche = document.querySelector('form');
+formRecherche.addEventListener('submit', (e) => {
+  e.preventDefault();
+  recherche();
+});
+
+function recherche() {
+  if (index < 151) {
+    addPoke(130);
+  }
+
+  let filter, allLi, titleValue, allTitles;
+  filter = searchInput.value.toUpperCase();
+  allLi = document.querySelectorAll('li');
+  allTitles = document.querySelectorAll('li > h5');
+
+  for (i = 0; i < allLi.length; i++) {
+    titleValue = allTitles[i].innerText;
+    if (titleValue.toUpperCase().indexOf(filter) > -1) {
+      allLi[i].style.display = 'flex';
+    } else {
+      allLi[i].style.display = 'none';
+    }
+  }
 }
 
 // Animation input
