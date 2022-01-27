@@ -87,6 +87,30 @@ function createCard(arr) {
   }
 }
 
+// Scroll infini
+
+window.addEventListener('scroll', () => {
+  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+  // scrollTop = scroll depuis le top
+  // scrollHeight = scroll total
+  // clientHeight = hauteur de la fenêtre, partie visible
+  console.log(scrollTop, scrollHeight, clientHeight);
+  if (clientHeight + scrollTop >= scrollHeight - 20) {
+    addPoke(6);
+  }
+});
+
+let index = 21;
+
+function addPoke(nb) {
+  if (index > 151) {
+    return;
+  }
+  const arrToAdd = allPokemon.slice(index, index + nb);
+  createCard(arrToAdd);
+  index += nb;
+}
+
 // Animation input
 
 searchInput.addEventListener('input', function (e) {
