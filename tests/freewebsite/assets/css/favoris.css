@@ -45,10 +45,13 @@ a:hover {
 }
 
 .link {
-  height: 32px;
-  display: flex;
+  display: grid;
+  grid-template-areas: 'a a';
+  grid-auto-columns: 64px 1fr;
 }
 
 .link img {
-  margin: 0 16px 0 0;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
 }
