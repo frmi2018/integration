@@ -70,6 +70,7 @@ li button {
 }
 button img {
   width: 40px;
+  pointer-events: none;
 }
 li span {
   font-size: 25px;
