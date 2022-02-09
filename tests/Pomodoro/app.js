@@ -18,3 +18,34 @@ affichageTravail.innerText = `${Math.trunc(tempsInitial / 60)} : ${
 affichagePause.innerText = `${Math.trunc(tempsDeRepos / 60)} : ${
   tempsDeRepos % 60 < 10 ? `0${tempsDeRepos % 60}` : tempsDeRepos % 60
 }`;
+
+btnGo.addEventListener("click", () => {
+  tempsInitial--;
+  affichageTravail.innerText = `${Math.trunc(tempsInitial / 60)} : ${
+    tempsInitial % 60 < 10 ? `0${tempsInitial % 60}` : tempsInitial % 60
+  }`;
+  let timer = setInterval(() => {
+    if (tempsInitial > 0) {
+      tempsInitial--;
+      affichageTravail.innerText = `${Math.trunc(tempsInitial / 60)} : ${
+        tempsInitial % 60 < 10 ? `0${tempsInitial % 60}` : tempsInitial % 60
+      }`;
+    } else if (tempsDeRepos === 0 && tempsInitial === 0) {
+      tempsInitial = 1800;
+      tempsDeRepos = 300;
+      affichageTravail.innerText = `${Math.trunc(tempsInitial / 60)} : ${
+        tempsInitial % 60 < 10 ? `0${tempsInitial % 60}` : tempsInitial % 60
+      }`;
+      affichagePause.innerText = `${Math.trunc(tempsDeRepos / 60)} : ${
+        tempsDeRepos % 60 < 10 ? `0${tempsDeRepos % 60}` : tempsDeRepos % 60
+      }`;
+      nbDeCycles++;
+      cycles.innerText = `nombre de cycles ${nbDeCycles}`;
+    } else if (tempsInitial === 0) {
+      tempsDeRepos--;
+      affichagePause.innerText = `${Math.trunc(tempsDeRepos / 60)} : ${
+        tempsDeRepos % 60 < 10 ? `0${tempsDeRepos % 60}` : tempsDeRepos % 60
+      }`;
+    }
+  }, 1000);
+});
