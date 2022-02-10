@@ -85,4 +85,20 @@ inpMdp.addEventListener("input", (e) => {
     allSpan[2].style.display = "none";
     allImg[2].src = "ressources/check.svg";
   }
+  // Affiche force du MDP
+  if (valeurInp.length > 0 && valeurInp.length <= 6) {
+    allLigne[0].style.display = "block";
+    allLigne[1].style.display = "none";
+    allLigne[2].style.display = "none";
+  } else if (valeurInp.length > 6 && valeurInp.length <= 9) {
+    allLigne[0].style.display = "block";
+    allLigne[1].style.display = "block";
+    allLigne[2].style.display = "none";
+  } else if (valeurInp.length > 9) {
+    allLigne[2].style.display = "block";
+  } else {
+    allLigne[0].style.display = "none";
+    allLigne[1].style.display = "none";
+    allLigne[2].style.display = "none";
+  }
 });
