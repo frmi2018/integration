@@ -101,4 +101,22 @@ inpMdp.addEventListener("input", (e) => {
     allLigne[1].style.display = "none";
     allLigne[2].style.display = "none";
   }
+  checkMdp();
 });
+
+// confirmation du mdp
+
+inpConfirme.addEventListener("input", (e) => {
+  checkMdp();
+});
+
+function checkMdp() {
+  if (inpConfirme.value === inpMdp.value) {
+    allImg[3].style.display = "inline";
+    allImg[3].src = "ressources/check.svg";
+  } else {
+    allImg[3].style.display = "inline";
+    allImg[3].src = "ressources/error.svg";
+  }
+  return;
+}

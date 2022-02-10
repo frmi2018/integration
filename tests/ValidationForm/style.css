@@ -63,12 +63,6 @@ button {
   font-size: 20px;
   cursor: pointer;
 }
-button:hover {
-  background: rgb(252, 181, 49);
-}
-button:active {
-  background: rgb(250, 165, 9);
-}
 .ligne {
   width: 80%;
   display: flex;
