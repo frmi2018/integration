@@ -1,5 +1,7 @@
 <img src="https://github.com/frmi2018/frmi2018/blob/main/assets/logos/html.png" width="100"/><img src="https://github.com/frmi2018/frmi2018/blob/main/assets/logos/css.png" width="100"/><img src="https://github.com/frmi2018/frmi2018/blob/main/assets/logos/js.png" width="100"/>
 
+Tous ces projets sont issus de différents tutoriels ou formations que j'ai réalisé au fil du temps pour progresser dans l'utilisation de ces 3 langages.
+
 ## Documentations :
 
 [HTML](https://www.w3schools.com/tags/default.asp)  
