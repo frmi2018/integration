@@ -24,7 +24,6 @@ inputRange.addEventListener("input", (e) => {
 });
 
 // + / -
-
 btns.forEach((btn) => {
   btn.addEventListener("click", rajouteEnleve);
 });
@@ -53,13 +52,27 @@ function rajouteEnleve(e) {
     } else {
       valCouleurs.pop();
       allInputs[allInputs.length - 1].remove();
+      index--;
       fond.style.background = `linear-gradient(${inclinaison}deg,${valCouleurs})`;
     }
   }
+  allInputs.forEach((inp) => {
+    inp.addEventListener("input", MAJCOLORS);
+  });
+}
+inputsCouleur.forEach((inp) => {
+  inp.addEventListener("input", MAJCOLORS);
+});
+
+function MAJCOLORS(e) {
+  let indexEnCours = e.target.getAttribut("data-index");
+  e.target.value = e.target.value.toUpperCase();
+  valCouleurs[indexEnCours - 1] = e.target.value.toUpperCase();
+  e.target.style.background = valCouleurs[indexEnCours - 1];
+  fond.style.background = `linear-gradient(${inclinaison}deg,${valCouleurs})`;
 }
 
 // Couleurs aléatoires
-
 btnRandom.addEventListener("click", () => {
   const inputs = document.querySelectorAll(".inp-couleur");
   for (let i = 0; i < valCouleurs.length; i++) {
