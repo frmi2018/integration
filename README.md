@@ -41,3 +41,4 @@ Tous ces projets sont issus de différents tutoriels ou formations que j'ai réa
 [Formulaire](http://frmi.free.fr/perso/tests/ValidationForm/index.html)  
 [Générateur de dégradés](http://frmi.free.fr/perso/tests/CouleursJS/index.html) /
 [Matching game](http://frmi.free.fr/perso/tests/MemoryCard/index.html) /
+[Github API](http://frmi.free.fr/perso/tests/GithubAPI/index.html) /
