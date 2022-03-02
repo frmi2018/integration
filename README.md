@@ -43,5 +43,6 @@ Tous ces projets sont issus de différents tutoriels ou formations que j'ai réa
 [Matching game](http://frmi.free.fr/perso/tests/MemoryCard/index.html) /
 [Github API](http://frmi.free.fr/perso/tests/GithubAPI/index.html) /
 [Authentification firebase](http://frmi.free.fr/perso/tests/Authentification/index.html) /
-[Slider JS](http://frmi.free.fr/perso/tests/Slider/index.html)  
-[Drag & Drop JS](http://frmi.free.fr/perso/tests/DragAndDrop/index.html) /
+[Slider](http://frmi.free.fr/perso/tests/Slider/index.html)  
+[Drag & Drop](http://frmi.free.fr/perso/tests/DragAndDrop/index.html) /
+[Particule](http://frmi.free.fr/perso/tests/ParticulesJS/index.html) /
