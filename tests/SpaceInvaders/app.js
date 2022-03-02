@@ -43,4 +43,65 @@ function creationGrilleEtAliens() {
   toutesLesDivs[tireurPosition].classList.add("tireur");
 }
 
+function deplacerLeTireur(e) {
+  toutesLesDivs[tireurPosition].classList.remove("tireur");
+  if (e.keyCode === 37) {
+    if (tireurPosition > 220) {
+      tireurPosition -= 1;
+    }
+  }
+  if (e.keyCode === 39) {
+    if (tireurPosition < 239) {
+      tireurPosition += 1;
+    }
+  }
+  toutesLesDivs[tireurPosition].classList.add("tireur");
+}
+
 creationGrilleEtAliens();
+document.addEventListener("keydown", deplacerLeTireur);
+
+// bouger les aliens
+let descendreRight = true;
+let descendreLeft = true;
+let direction = 1;
+
+function bougerLesAliens() {
+  for (let i = 0; i < alienInvaders.length; i++) {
+    if (toutesLesDivs[alienInvaders[i]].getAttribute("data-right") === "true") {
+      if (descendreRight) {
+        direction = 20;
+        setTimeout(() => {
+          descendreRight = false;
+        }, 50);
+      } else if (descendreRight === false) {
+        direction = -1;
+      }
+      descendreLeft = true;
+    } else if (
+      toutesLesDivs[alienInvaders[i]].getAttribute("data-left") === "true"
+    ) {
+      if (descendreLeft) {
+        direction = 20;
+        setTimeout(() => {
+          descendreLeft = false;
+        }, 50);
+      } else if (descendreLeft === false) {
+        direction = 1;
+      }
+      descendreRight = true;
+    }
+  }
+
+  for (let i = 0; i < alienInvaders.length; i++) {
+    toutesLesDivs[alienInvaders[i]].classList.remove("alien");
+  }
+  for (let i = 0; i < alienInvaders.length; i++) {
+    alienInvaders[i] += direction;
+  }
+  for (let i = 0; i < alienInvaders.length; i++) {
+    toutesLesDivs[alienInvaders[i]].classList.add("alien");
+  }
+}
+
+// invaderId = setInterval(bougerLesAliens, 500);
