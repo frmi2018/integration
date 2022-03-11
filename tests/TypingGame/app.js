@@ -4,10 +4,11 @@ const tempsAffichage = document.querySelector(".temps");
 const scoreAffichage = document.querySelector(".score");
 
 const phraseAEcrire = document.querySelector(".phrase-a-ecrire");
-const phraseTest = document.querySelector("phrase-test");
+const phraseTest = document.querySelector(".phrase-test");
 
 let temps = 60;
 let score = 0;
+let phrasePourScore;
 tempsAffichage.innerText = `Temps : ${temps}`;
 
 let timer = setInterval(time, 1000);
@@ -26,9 +27,8 @@ function time() {
 async function afficherNvPhrase() {
   const appel = await fetch(APICALL);
   const resultats = await appel.json();
-  //   console.log(resultats);
   const phrase = resultats.content;
-
+  phrasePourScore = phrase.length;
   phraseAEcrire.innerHTML = "";
 
   phrase.split("").forEach((carac) => {
@@ -36,7 +36,35 @@ async function afficherNvPhrase() {
     caracSpan.innerText = carac;
     phraseAEcrire.appendChild(caracSpan);
   });
-  phrase.value = null;
+
+  phraseTest.value = null;
 }
 
 afficherNvPhrase();
+
+phraseTest.addEventListener("input", () => {
+  const tableauPhrase = phraseAEcrire.querySelectorAll("span");
+  const tableauTest = phraseTest.value.split("");
+
+  let correct = true;
+
+  tableauPhrase.forEach((caracSpan, index) => {
+    const caractere = tableauTest[index];
+    if (caractere === undefined) {
+      caracSpan.classList.remove("correct");
+      caracSpan.classList.remove("incorrect");
+      correct = false;
+    } else if (caractere === caracSpan.innerText) {
+      caracSpan.classList.add("correct");
+      caracSpan.classList.remove("incorrect");
+    } else {
+      caracSpan.classList.remove("correct");
+      caracSpan.classList.add("incorrect");
+      correct = false;
+    }
+  });
+  if (correct) {
+    afficherNvPhrase();
+    score += phrasePourScore;
+  }
+});
