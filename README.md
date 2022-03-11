@@ -48,3 +48,4 @@ Tous ces projets sont issus de différents tutoriels ou formations que j'ai réa
 [Particule](http://frmi.free.fr/perso/tests/ParticulesJS/index.html) /
 [Space Invaders](http://frmi.free.fr/perso/tests/SpaceInvaders/index.html) /
 [Lecteur video](http://frmi.free.fr/perso/tests/CustomLecteurVideo/index.html) /
+[Jeu de saisie rapide](http://frmi.free.fr/perso/tests/TypingGame/index.html)
